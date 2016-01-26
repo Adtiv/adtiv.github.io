@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding:0;
+}
+.header{
+	padding-top:30px;
+	width: 100%;
+	height:50px;
+	background-color:rgba(0,0,0,1);
+	position:relative;
+	text-align: center;
+}
+.pageLink{
+	font-size: 125%;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: bold;
+	font-family: "Times New Roman";
+}
+.pageLink:link {
+    color: #F7CE74;
+    text-decoration: none;
+}
+
+/* visited link */
+.pageLink:visited {
+    color: #F7CE74;
+}
+/* mouse over link */
+.pageLink:hover {
+    color: #FFFF2E;
+    text-decoration: underline;
+}
+/* selected link */
+.pageLink:active {
+    color: blue;
+}
+#gitLink{
+	font-weight: bold;
+	color:blue;
+	margin-left: 48%;
+}
+#gitLink:link{
+	text-decoration: none;
+}
+#gitLink:hover{
+	color: #FFFF2E;
+    text-decoration: underline;
+}
+.body{
+	background-color:rgba(192,192,192,0.5);
+	margin-left: 15%;
+	margin-right:15%;
+	position:relative;
+	font-size:18px;
+}
+.container{
+	background-image:url("background1.jpg");
+}
+#me{
+	padding-top:2%;
+	padding-left:28%;
+}
+#aboutMe{
+	padding-top:2%;
+	padding-left: 18%;
+	padding-right:15%;
+}
+#resume{
+	padding-top:1%;
+	padding-left:20%;
+}
+
+.folioPiece{
+	border-bottom:2px solid black;
+	padding:2%;
+	padding-bottom:5%;
+	padding-top:5%;
+}
+#tdPic{
+	margin-right: 2%;
+
+}
+#description{
+	width: 30%;
+	position:relative;
+	float:right;
+}
+#caPic{
+	margin-left: 3%;
+}
+#description2{
+	padding-left:5%;
+	width: 45%;
+	position:relative;
+	display: inline-block;
+}
+#art{
+	display:inline-block;
+	margin-left: 5%;
+}
+.codeLink{
+	color: blue;
+}
+.linkedIn{
+	width:50px;
+	height:50px;
+	padding-left: 48%;
+	text-align: center;
+	margin-bottom: 2%;
+}
