@@ -89,6 +89,9 @@
 #caPic{
 	margin-left: 3%;
 }
+#cbcPic{
+	margin-left: 3%;
+}
 #description2{
 	padding-left:5%;
 	width: 45%;
@@ -97,7 +100,8 @@
 }
 #art{
 	display:inline-block;
-	margin-left: 5%;
+	margin-left: 75%;
+	margin-top:-35%;
 }
 .codeLink{
 	color: blue;
