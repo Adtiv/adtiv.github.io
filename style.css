@@ -121,21 +121,56 @@ body{
 	padding-bottom:5%;
 }
 .folioHeader{
-	font-size: 325%;
-	font-family: 'Abril Fatface', sans-serif;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 400%;
+}
+.headerBreak { 
+  border: 0; 
+  height: 35px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 2px 0 0 0; 
+  border-radius: 20px; 
+} 
+.headerBreak:before { 
+  display: block; 
+  content: ""; 
+  height: 35px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8c8c; 
+  border-width: 0 0 2px 0; 
+  border-radius: 20px; 
+}
+.subHeaderBreak{
+  margin-top: -90px;
+  margin-bottom: 5%;
+  width: 50%;
+  float: left;
+  border: 0;
+  border-top: 2px solid #8c8c8c;
+  border-bottom: 2px solid #8c8c8c;;
+  box-shadow: 0 0 10px 1px black;
 }
 .folioPiece{
-	border-bottom:2px solid black;
+	font-weight: bold;
+	border-bottom:1px solid black;
+	font-size: 120%;
 	padding:2%;
 	padding-bottom:5%;
 	padding-top:5%;
 }
 .subFolioCategory{
-	font-family: 'Abril Fatface', sans-serif;
-	margin-left: 5%;
-	font-size: 250%;
-	color:rgb(10,10,30);
+	font-family: 'Pacifico', cursive;
+	margin-left: 1%;
+	margin-top: 0;
+	font-size: 280%;
+	color:rgb(10,10,35);
 	font-weight: bold;
+}
+.codeUsed{
+	color:rgb(10,10,55);
+
 }
 #tdPic{
 	margin-right: 2%;
@@ -173,3 +208,15 @@ body{
 	text-align: center;
 	margin-bottom: 1%;
 }
+canvas{
+  left:0;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -32%;
+  border:5px solid rgba(255,255,255,0.1);
+  box-shadow:inset 0 0 100px #4162a9;
+  transform:translateZ(0);
+}
+
+

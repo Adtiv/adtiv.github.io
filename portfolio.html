@@ -2,30 +2,42 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
 		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">		
 		<link href="style.css" rel="stylesheet"/>
 		<script type="text/javascript" src="processing/minim.js"></script>
 		<script type="text/javascript" src="processing/processing.js"></script>
 		<script type="text/javascript" src="processing/processing.min.js"></script>
 		<link rel="icon" type="image/png"
-     	href="images/MeIcon2.png" />
+     	href="images/MeIcon.png" />
 	</head>
 	<div class="header">
-		<img class="iconImg" src="images/MeIcon2.png">
+		<img class="iconImg" src="images/MeIcon.png">
 		<a id="aboutLink"class="pageLink" href="index.html">About Me</a>
 		<a id="portLink"class="pageLink" style="color: #FFFF2E;text-decoration: underline;"href="portfolio.html">Portfolio</a>
 		<a id="resLink"class="pageLink" href="resume.html">Resumé</a>
 	</div>
 	<div class="container">
+		<div class="containerCube">
+		    <div class="back side"><span class='dot'></span></div>
+		    <div class="left side"><span class='dot'></span></div>
+		    <div class="right side"><span class='dot'></span></div>
+		    <div class="top side"><span class='dot'></span></div>
+		    <div class="bottom side"><span class='dot'></span></div>
+		    <div class="front side"><span class='dot'></span></div>
+		  </div>
+		<!--<canvas id="particleCanvas"></canvas><script type="text/javascript" src='particles.js'></script>-->
 		<div class="body">
 			<!--
 			<div class="folioPiece">
 				<script type="application/processing">
 				</script><canvas width="100" height="100"></canvas></p>
 			</div>-->
-			<div class="folioPiece">
-				<h1 class="folioHeader"style="text-align:center"><u>Software</u></h1><br>
-				<p class="subFolioCategory">Web / Mobile</p><br><br>
+			<div class="folioPiece" style="padding-top:1px;">
+				<h1 class="folioHeader"style="text-align:center;">Software</h1>
+				<hr class="headerBreak">
+				<p class="subFolioCategory">Web / Mobile</p>
+				<hr class="subHeaderBreak"style="width:45%;">
 				<a href="images/lawManTask.PNG"><img src="images/lawManTask.PNG" id="cbcPic" style="width:40%;height:40%;margin-left:2%;"></a>
 				<a href="images/lawManClient.PNG"><img id="cbcPic"src="images/lawManClient.PNG" style="width:40%;height:40%;margin-left:10%;"></a><br><br><span style="margin-left:45%">-Web</span><br><br>
 				<a href="images/lawManAddTask.PNG"><img src="images/lawManAddTask.PNG" id="cbcPic" style="width:40%;height:40%;margin-left:2%;"></a>
@@ -35,7 +47,7 @@
 				<a href="images/lawManMobileTaskDetail.PNG"><img src="images/lawManMobileTaskDetail.PNG" id="cbcPic" style="width:20%;height:40%;margin-left:15%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					Full stack task and client management system, currently under development. Will connect to box and outlook API's <i><b>Ionic2, Angular2, Typescript, Firebase</b></i>.
+					Full stack task and client management system, currently under development. Will connect to box and outlook API's <span class="codeUsed"><i><b>Ionic2, Angular2, Typescript, Firebase</b></i>.</span>
 					<br><br><a class="codeLink" href="https://lawyermanagementsys-2df1f.firebaseapp.com/">Current hosted site</a>
 				</div>
 			</div>
@@ -47,7 +59,7 @@
 				<a href="images/cbc6.PNG"><img id="cbcPic"src="images/cbc6.PNG" style="width:20%;height:40%;margin-left:15%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					"Campus Buyers Club"-Application for college students to buy and sell items. <i><b>HTML, CSS, Javascript, Phonegap, Jquery Mobile, Firebase(DB)</b></i>.
+					"Campus Buyers Club"-Application for college students to buy and sell items. <span class="codeUsed"><i><b>HTML, CSS, Javascript, Phonegap, Jquery Mobile, Firebase(DB)</b></i>.</span>
 					<br><br><a class="codeLink" href="https://github.com/Adtiv/HCI_App">See the code</a>
 				</div>
 			</div>
@@ -55,17 +67,18 @@
 				<a href="images/hbra2.PNG"><img src="images/hbra2.PNG" id="caPic" style="width:20%;height:40%;"></a><a href="images/hbra1.PNG"><img id="caPic"src="images/hbra1.PNG" style="width:20%;height:40%;margin-left:15%;"></a>
 				<div id="description">
 					<br><br>
-					- Mobile Phonegap Application for Construction Site Safety Inspectors. <i><b>HTML, CSS, Javascript, Phonegap</b></i>.
+					- Mobile Phonegap Application for Construction Site Safety Inspectors. <span class="codeUsed"><i><b>HTML, CSS, Javascript, Phonegap</b></i>.</span>
 					<br><br><a class="codeLink" href="https://github.com/Adtiv/tourbillon-hbra">See the code</a>
 				</div>
 			</div>
 			<div class="folioPiece">
-				<p class="subFolioCategory">Games</p><br><br>
+				<p class="subFolioCategory">Games</p>
+				<hr class="subHeaderBreak"style="width:22%;">
 				<a href="images/spaceWarHome.PNG"><img src="images/spaceWarHome.PNG" style="width:30%;height:40%;margin-left:3%;"></a><a href="images/spaceWarGame.PNG"><img src="images/spaceWarGame.PNG" style="width:30%;height:40%;margin-left:2%;"></a>
 				<a href="images/spaceWarBomb.PNG"><img src="images/spaceWarBomb.PNG" style="width:30%;height:40%;margin-left:2%;"></a><br><br>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>"Space War" - take on the xbox mini game Geometry wars, shoot and avoid the asteroids or game over!
-					<b>Processing(Java based visual language)</b>
+					<span class="codeUsed"><i><b>Processing(Java based visual language)</b></i></span>
 					<br><br><a class="codeLink" href="https://drive.google.com/file/d/0BxDtHxkc0xugVUdlLUkzNTZUR0E/view?usp=sharing">Download the game (Windows)</a>
 				</div>
 			</div>
@@ -77,7 +90,7 @@
 				<a href="images/battlefield1.png"><img src="images/battlefield1.png" id="caPic" style="width:30%;height:30%;"></a><a href="images/battlefield2.png"><img id="caPic"src="images/battlefield2.png" style="width:30%;height:30%;"></a><a href="images/battlefield3.png"><img id="caPic"src="images/battlefield3.png" style="width:30%;height:30%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					- "Revolutions"-3D action adventure/tower defense game. Modeled the above three levels: Spaceship, Earth Faction Homebase, and Battlefield. All textures, skyboxes, and models are custom(besides trees). Also responsible for programming game AI and first person, and quest interactions for Earth level. Implemented enemy/first person animations. Created all 2D art and theme song. Currently still in development. <i><b>Maya, Blender, Ableton, Gimp, Unity3D, C#</b></i>.
+					- "Revolutions"-3D action adventure/tower defense game. Modeled the above three levels: Spaceship, Earth Faction Homebase, and Battlefield. All textures, skyboxes, and models are custom(besides trees). Also responsible for programming game AI and first person, and quest interactions for Earth level. Implemented enemy/first person animations. Created all 2D art and theme song. Currently still in development. <span class="codeUsed"><i><b>Maya, Blender, Ableton, Gimp, Unity3D, C#</b></i>.</span>
 					<a class="codeLink" href="https://github.com/jasontowens/rEVOLUTIONs">See the code</a>
 				</div>				
 			</div>
@@ -85,18 +98,19 @@
 				<a href="images/homescreen.jpg"><img src="images/homescreen.jpg" id="caPic" style="width:30%;height:30%;"></a><a href="images/shooting2.jpg"><img id="caPic"src="images/shooting2.jpg" style="width:30%;height:30%;"></a>
 				<div id="description">
 					<br><br>
-					- "Shapes"- original 2D Tower Defense game. <i><b>Java</b></i>.
+					- "Shapes"- original 2D Tower Defense game. <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<br><br><a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xuga1VPc0RlMGJkc0E&usp=sharing">See the code</a>
 				</div>
 			</div>
 			<div class="folioPiece">
-				<p class="subFolioCategory">Data Science</p><br><br>
+				<p class="subFolioCategory">Data Science</p>
+				<hr class="subHeaderBreak"style="width:40%;">
 				<a href="images/pageRankOriginal.PNG"><img src="images/pageRankOriginal.PNG" id="cbcPic" style="width:30%;height:40%;margin-left:2%;"></a>
 				<a href="images/pageRankIter1.PNG"><img id="cbcPic"src="images/pageRankIter1.PNG" style="width:30%;height:40%;margin-left:2%;"></a>
 				<a href="images/pageRankIter8.PNG"><img src="images/pageRankIter8.PNG" id="cbcPic" style="width:30%;height:40%;margin-left:2%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					Google page rank implementation. Takes an adjacency graph of wikilinks and ranks them. Produces results for the first and eigth iterations and runs on AWS.<i><b>Data Science, Hadoop, Mapreduce, Java</b></i>.
+					Google page rank implementation. Takes an adjacency graph of wikilinks and ranks them. Produces results for the first and eigth iterations and runs on AWS. <span class="codeUsed"><i><b>Data Science, Hadoop, Mapreduce, Java</b></i>.</span>
 					<br><br><a class="codeLink" href="https://drive.google.com/drive/folders/0BxDtHxkc0xugMW5NYVZHcjVfZ0U?usp=sharing">See the code</a>
 				</div>
 			</div>
@@ -105,16 +119,17 @@
 				<a href="images/zScore2.PNG"><img id="cbcPic"src="images/zScore2.PNG" style="width:40%;height:40%;margin-left:10%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					Data cleaning task, which predicts the correctness of highway sensor data based on the z-scores from recorded values and sorts the final result.<i><b>Data Science, Python, Pandas</b></i>.
+					Data cleaning task, which predicts the correctness of highway sensor data based on the z-scores from recorded values and sorts the final result. <span class="codeUsed"><i><b>Data Science, Python, Pandas</b></i>.</span>
 					<br><br><a class="codeLink" href="https://drive.google.com/drive/folders/0BxDtHxkc0xugMW5NYVZHcjVfZ0U?usp=sharing">See the code</a>
 				</div>
 			</div>
 			<div class="folioPiece">
-				<p class="subFolioCategory">Fractals and simulations</p><br><br>
+				<p class="subFolioCategory">Fractals / Simulations</p>
+				<hr class="subHeaderBreak"style="width:67%;">
 				<a href="images/CA1.png"><img src="images/CA1.png" id="caPic" style="width:30%;height:30%;"></a><a href="images/CA2.png"><img id="caPic"src="images/CA2.png" style="width:30%;height:30%;"></a><a href="images/CA3.png"><img id="caPic"src="images/CA3.png" style="width:30%;height:30%;"></a>
 				<div id="description2">
 					<br><br>
-					- Cellular Automata <i><b>Java</b></i>.
+					- Cellular Automata <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xugaFJ1aTd2YVRfVWs&usp=sharing">See the code</a>
 				</div>
 			</div>
@@ -122,7 +137,7 @@
 				<a href="images/mandelUnzoom.png"><img src="images/mandelUnzoom.png" id="caPic" style="width:30%;height:30%;"></a><a href="images/juliaUnzoom.png"><img id="caPic"src="images/juliaUnzoom.png" style="width:30%;height:30%;"></a><a href="images/juliaZoom.jpg"><img id="caPic"src="images/juliaZoom.jpg" style="width:30%;height:30%;"></a>
 				<div id="description2">
 					<br><br>
-					- MandelBrot and Julia Set generator with animated zoom feature<i><b>Java</b></i>.
+					- MandelBrot and Julia Set generator with animated zoom feature <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xugSFNNOExfYmQ3R00&usp=sharing">See the code</a>
 				</div>
 			</div>
@@ -130,7 +145,7 @@
 				<a href="images/carpet.png"><img src="images/carpet.png" id="caPic" style="width:30%;height:30%;"></a><a href="images/island.png"><img id="caPic"src="images/island.png" style="width:30%;height:30%;"></a><a href="tree.png"><img id="caPic"src="images/tree.png" style="width:30%;height:30%;"></a>
 				<div id="description2">
 					<br><br>
-					- L-Systems <i><b>Java</b></i>.
+					- L-Systems <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xugYWlUc1BUWHF6Tms&usp=sharing">See the code</a>
 				</div>
 			</div>
@@ -138,7 +153,7 @@
 				<a href="images/Fern.png"><img src="images/Fern.png" id="caPic" style="width:30%;height:30%;"></a><a href="images/FractalPattern.png"><img id="caPic"src="images/FractalPattern.png" style="width:30%;height:30%;"></a><a href="images/fractalTree.png"><img id="caPic"src="images/fractalTree.png" style="width:30%;height:30%;"></a>
 				<div id="description2">
 					<br><br>
-					- IFS(Iterated Fractal Systems) <i><b>Java</b></i>.
+					- IFS(Iterated Fractal Systems) <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xugdDZWSzA3SklTTGc&usp=sharing">See the code</a>
 				</div>
 			</div>
@@ -146,13 +161,15 @@
 				<a href="images/branches1.jpg"><img src="images/branches1.jpg" id="caPic" style="width:30%;height:30%;"></a><a href="images/branches2.jpg"><img id="caPic"src="images/branches2.jpg" style="width:30%;height:30%;"></a><a href="images/branches3.jpg"><img id="caPic"src="images/branches3.jpg" style="width:30%;height:30%;"></a>
 				<div id="description2">
 					<br><br>
-					- Animated plant growth simulation <i><b>Java</b></i>.
+					- Animated plant growth simulation <span class="codeUsed"><i><b>Java</b></i>.</span>
 					<a class="codeLink" href="https://drive.google.com/folderview?id=0BxDtHxkc0xugRERpUTZhVWRkNXM&usp=sharing">See the code</a>
 				</div>
 			</div>
 			<div class="folioPiece">
-				<h1 class="folioHeader"style="text-align:center"><u>Artwork</u></h1><br>
-				<p class="subFolioCategory">Drawing</p><br><br>
+				<h1 class="folioHeader"style="text-align:center; margin-top:0px;">Artwork</h1>
+				<hr class="headerBreak">
+				<p class="subFolioCategory">Drawing</p>
+				<hr class="subHeaderBreak"style="width:28%;">
 				<a href="images/Perspective.JPG"><img src="images/Perspective.JPG" id="caPic" style="width:40%;height:30%;"></a>
 				<a href="images/HomescreenRev.png"><img src="images/HomescreenRev.png" id="caPic" style="margin-left:15%;width:40%;height:30%;"></a> <br><br>
 				<span style="float:left;margin-left:5%;">- Perspective drawing <i><b>Bourbon St.</b></i></span> <span style="float:right;margin-right:5%;">- 2D art for Revolutions.</span>
@@ -161,7 +178,8 @@
 				<a href="images/girl.png"><img src="images/girl.png" id="caPic" style="width:30%;height:45%;"></a><a href="images/guy.png"><img src="images/guy.png" id="caPic" style="width:30%;height:45%;"></a><br><br>
 			</div>
 			<div class="folioPiece">
-				<p class="subFolioCategory">Sculpture</p><br><br>
+				<p class="subFolioCategory">Sculpture</p>
+				<hr class="subHeaderBreak"style="width:30%;">
 				<span style="float:left;margin-left:5%;">-Hand-crafted wooden guitar made with a single 2x4, stairway to heaven is carved into the face</span><br><br>
 				<a href="images/Guitar_2.JPG"><img id="caPic" src="images/Guitar_2.JPG"  style="width:28%;height:50%;"></a>
 				<a href="images/Guitar_3.JPG"><img id="caPic" src="images/Guitar_3.JPG"  style="width:28%;height:50%;"></a>
@@ -174,7 +192,9 @@
 				<a href="images/BonsaiSkull_3.JPG"><img id="caPic" src="images/BonsaiSkull_3.JPG"  style="width:28%;height:40%;"></a>
 			</div>
 			<div class="folioPiece">
-				<h1 class="folioHeader"style="text-align:center"><u>Music</u></h1><br><br><br>
+				<h1 class="folioHeader"style="text-align:center;margin-top:0px">Music</h1>
+				<hr class="headerBreak">
+				<br><br>
 				-Original instrumental and electronic pieces. <b>Ableton Live, FL Studio.</b><br><br>
 				<audio src="sounds/Beat9.wav" controls="controls"></audio><br><br>
 				<audio src="sounds/beat13limit.wav" controls="controls"></audio><br><br>
