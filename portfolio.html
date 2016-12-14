@@ -1,15 +1,20 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 		<link href="style.css" rel="stylesheet"/>
 		<script type="text/javascript" src="processing/minim.js"></script>
 		<script type="text/javascript" src="processing/processing.js"></script>
 		<script type="text/javascript" src="processing/processing.min.js"></script>
+		<link rel="icon" type="image/png"
+     	href="images/MeIcon.png" />
 	</head>
 	<div class="header">
-		<a class="pageLink" href="index.html">About Me</a>
-		<a class="pageLink" href="portfolio.html">Portfolio</a>
-		<a class="pageLink" href="resume.html">Resumé</a>
+		<img class="iconImg" src="images/meIcon2.png">
+		<a id="aboutLink"class="pageLink" href="index.html">About Me</a>
+		<a id="portLink"class="pageLink" style="color: #FFFF2E;text-decoration: underline;"href="portfolio.html">Portfolio</a>
+		<a id="resLink"class="pageLink" href="resume.html">Resumé</a>
 	</div>
 	<div class="container">
 		<div class="body">
@@ -19,7 +24,7 @@
 				</script><canvas width="100" height="100"></canvas></p>
 			</div>-->
 			<div class="folioPiece">
-				<h1 style="text-align:center"><u>Software</u></h1><br><br><br><br><br>
+				<h1 class="folioHeader"style="text-align:center"><u>Software</u></h1><br><br><br><br><br>
 				<a href="images/lawManTask.PNG"><img src="images/lawManTask.PNG" id="cbcPic" style="width:40%;height:40%;margin-left:2%;"></a>
 				<a href="images/lawManClient.PNG"><img id="cbcPic"src="images/lawManClient.PNG" style="width:40%;height:40%;margin-left:10%;"></a><br><br><span style="margin-left:45%">-Web</span><br><br>
 				<a href="images/lawManAddTask.PNG"><img src="images/lawManAddTask.PNG" id="cbcPic" style="width:40%;height:40%;margin-left:2%;"></a>
@@ -70,7 +75,7 @@
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>"Space War" - take on the xbox mini game Geometry wars, shoot and avoid the asteroids or game over!
 					<b>Processing(Java based visual language)</b>
-					<br><br><a class="codeLink" href="https://drive.google.com/file/d/0BxDtHxkc0xugVUdlLUkzNTZUR0E/view?usp=sharing">Download the game</a>
+					<br><br><a class="codeLink" href="https://drive.google.com/file/d/0BxDtHxkc0xugVUdlLUkzNTZUR0E/view?usp=sharing">Download the game (Windows)</a>
 				</div>
 			</div>
 			<div class="folioPiece">
@@ -142,24 +147,28 @@
 				</div>
 			</div>
 			<div class="folioPiece">
-				<h1 style="text-align:center"><u>Artwork</u></h1><br><br><br><br><br>
+				<h1 class="folioHeader"style="text-align:center"><u>Artwork</u></h1><br><br><br><br><br>
 				<a href="images/Perspective.JPG"><img src="images/Perspective.JPG" id="caPic" style="width:40%;height:30%;"></a>
 				<a href="images/HomescreenRev.png"><img src="images/HomescreenRev.png" id="caPic" style="margin-left:15%;width:40%;height:30%;"></a> <br><br>
 				<span style="float:left;margin-left:5%;">- Perspective drawing <i><b>Bourbon St.</b></i></span> <span style="float:right;margin-right:5%;">- 2D art for Revolutions.</span>
 				<br><br>
 				<a href="images/oldMan.png"><img src="images/oldMan.png" id="caPic" style="width:30%;height:45%;"></a> 
 				<a href="images/girl.png"><img src="images/girl.png" id="caPic" style="width:30%;height:45%;"></a><a href="images/guy.png"><img src="images/guy.png" id="caPic" style="width:30%;height:45%;"></a><br><br>
+			</div>
+			<div class="folioPiece">
 				<span style="float:left;margin-left:5%;">-Hand-crafted wooden guitar made with a single 2x4, stairway to heaven is carved into the face</span><br><br>
 				<a href="images/Guitar_2.JPG"><img id="caPic" src="images/Guitar_2.JPG"  style="width:28%;height:50%;"></a>
 				<a href="images/Guitar_3.JPG"><img id="caPic" src="images/Guitar_3.JPG"  style="width:28%;height:50%;"></a>
 				<a href="images/Guitar_4.JPG"><img id="caPic" src="images/Guitar_4.JPG"  style="width:28%;height:50%;"></a><br><br>
+			</div>
+			<div class="folioPiece">
 				<span style="float:left;margin-left:5%;">-Clay skull with wire bonsai tree growing out of the top</span><br><br>
 				<a href="images/BonsaiSkull_1.JPG"><img id="caPic" src="images/BonsaiSkull_1.JPG"  style="width:28%;height:40%;"></a>
 				<a href="images/BonsaiSkull_2.JPG"><img id="caPic" src="images/BonsaiSkull_2.JPG"  style="width:28%;height:40%;"></a>
 				<a href="images/BonsaiSkull_3.JPG"><img id="caPic" src="images/BonsaiSkull_3.JPG"  style="width:28%;height:40%;"></a>
 			</div>
 			<div class="folioPiece">
-				<h1 style="text-align:center"><u>Music</u></h1><br><br><br><br><br>
+				<h1 class="folioHeader"style="text-align:center"><u>Music</u></h1><br><br><br><br><br>
 				-Original instrumental and electronic pieces. <b>Ableton Live, FL Studio.</b><br><br>
 				<audio src="sounds/Beat9.wav" controls="controls"></audio><br>
 				<audio src="sounds/beat13limit.wav" controls="controls"></audio><br>
