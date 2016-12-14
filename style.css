@@ -141,6 +141,7 @@ body{
   box-shadow: 0 0 10px 1px black;
 }
 .folioPiece{
+	text-align: center;
 	font-weight: bold;
 	border-bottom:1px solid black;
 	font-size: 120%;
@@ -149,6 +150,7 @@ body{
 	padding-top:5%;
 }
 .subFolioCategory{
+	text-align: left;
 	font-family: 'Pacifico', cursive;
 	margin-left: 1%;
 	margin-top: 0;
