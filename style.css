@@ -125,23 +125,11 @@ body{
 	font-size: 400%;
 }
 .headerBreak { 
-  border: 0; 
-  height: 35px; 
-  border-style: solid; 
-  border-color: #8c8c8c; 
-  border-width: 2px 0 0 0; 
-  border-radius: 20px; 
+ border : 0;
+  height: 3px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
 } 
-.headerBreak:before { 
-  display: block; 
-  content: ""; 
-  height: 35px; 
-  margin-top: -31px; 
-  border-style: solid; 
-  border-color: #8c8c8c; 
-  border-width: 0 0 2px 0; 
-  border-radius: 20px; 
-}
+
 .subHeaderBreak{
   margin-top: -90px;
   margin-bottom: 5%;
@@ -181,12 +169,11 @@ body{
 	position:relative;
 	float:right;
 }
-#caPic{
+.caPic{
 	margin-left: 3%;
+	border:2px solid black;
 }
-#cbcPic{
-	margin-left: 3%;
-}
+
 #description2{
 	padding-left:5%;
 	width: 45%;
