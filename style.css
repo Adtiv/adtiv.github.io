@@ -135,6 +135,7 @@ body{
 }
 .folioHeader{
 	font-family: 'Abril Fatface', cursive;
+	font-family: 'Fontdiner Swanky', cursive;
 	font-size: 400%;
 }
 .headerBreak { 
@@ -145,7 +146,7 @@ body{
 } 
 
 .subHeaderBreak{
-  margin-top: -85px;
+  margin-top: -60px;
   margin-bottom: 5%;
   width: 50%;
   float: left;
@@ -168,7 +169,7 @@ body{
 	font-family: 'Pacifico', cursive;
 	margin-left: 1%;
 	margin-top: 0;
-	font-size: 250%;
+	font-size: 225%;
 	color:rgb(10,10,35);
 	font-weight: bold;
 }
