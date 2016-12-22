@@ -24,4 +24,9 @@ SeatGeek -  ticket search engine
 Fareportal - Travel tech
 Meetup - Mobile app 
 Noom - lifeCoaching app
+MongoDB
+Adobe
+Slack
+Etsy
+shutterstock
 
