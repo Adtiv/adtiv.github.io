@@ -18,7 +18,7 @@ Kickstarter
 GrubHub
 BlueCore
 Peloton Interactive - smart exercise bike
-Kargo -  leader in mobile brand advertising.
+***(Associate Software Engineer) Kargo -  leader in mobile brand advertising.
 ClassPass - fitness startup
 SeatGeek -  ticket search engine
 Fareportal - Travel tech
