@@ -1,42 +1,90 @@
 ***(emailed)YouVisit - allows users to create and share virtual reality content on their VR headsets, mobile devices and desktops.
 ***(UI developer/engineer) IrisVR -  a platform that creates virtual walkthroughs for architects, engineers and designers.
 ***(Emailed) LittlStar -  a global video network—a YouTube for VR if you will— dedicated to immersive 360-degree video and photos.
-InsiteVR - allows users to prototype and present designs in a 3D model. 
 ***(none open)KonceptVR -  virtual reality agency that provides high quality VR experiences and video content production. The company is the production arm of Freedom360, which made the original 360-degree camera mount. 
-***(Front End Software Engineer) Button - Button is poised to change how we interact with our smartphones. The company is working to create the plumbing behind mobile deep linking, connecting apps in order for people to complete multiple actions at the tap of a button.
-tripleLift - mobile/web ads
-***(none)Yext - enables businesses to update location-related information on multiple websites from one place. 
-***(front End Software Engineer)Compass - technology-driven real estate platform that is revolutionizing traditional brokerage.
-LiveLikeVR - enables broadcasters and sports teams to deliver live sports viewing experiences.
+-***(Front End Software Engineer) Button - Button is poised to change how we interact with our smartphones. The company is working to create the plumbing behind mobile deep linking, connecting apps in order for people to complete multiple actions at the tap of a button.
+-***(Software Engineer)Yext - enables businesses to update location-related information on multiple websites from one place. 
+-***(front End Software Engineer)Compass - technology-driven real estate platform that is revolutionizing traditional brokerage.
 ***(Software Engineer)Snapchat - university grad
-justworks - seamless payroll, great and affordable benefits, and comprehensive compliance coverage, all in one cutting-edge product
-Joor -  The JOOR platform and its intuitive technology is pioneering a wholesale revolution. We've put the entire wholesale buying and selling process online enabling brands and retailers to drive incremental revenue, cut costs, eliminate manual paper/order entry, improve their customer experience and analyze performance through data analytics.
-Digital Ocean - cloud computing
 ***(Software Engineer, New Grad)Buzzfeed
 ***(Front End Software Engineer) Knewton - create free adaptive learning lessons that help students meet learning goals.
 ***(Front End Software Engineer) Kickstarter
 ***(Mid level Software Engineer) GrubHub
 ***(Software Engineering Intern) Tumblr
-BlueCore
-***(Front End Software Engineer)Peloton Interactive - smart exercise bike
+-***(Front End Software Engineer)Peloton Interactive - smart exercise bike
 ***(Associate Software Engineer)Kargo -  leader in mobile brand advertising.
 ***(Front End Software Engineer)ClassPass - fitness startup
-SeatGeek -  ticket search engine
-Fareportal - Travel tech
 ***(Core Engineer)Meetup - Mobile app 
-Noom - lifeCoaching app
 ***(Software Engineer, New Grad)MongoDB
-Adobe
-Slack
 ***(Software Engineer, Systems Design) Etsy 
+***(Android Software Engineer) soundcloud
+***(Front-end Software Engineer) Handshake
+***(Interaction Prototyper)***(Software Engineer-all levels) Magic Leap
+***(Software Engineer)curalate
+***(Full Stack Software Engineer)Warby Parker
+-***(Front End Software Engineer)Squarespace
+***(Junior Developer)Datadog
+-***(Software Engineer, platform)-***(Front End Software Engineer)dataminr
+***(UI Engineer)BlueCore
+***(Software Engineer)foursquare
+-***(Full-Stack Software Engineer)betterment
+***(Software Engineer Player)JW Player
+***(Front End Software Engineer creator platform)vimeo
+***(software engineer)intersection
+***(software engineer)codecademy
+-***(junior front end engineer)Dexter Bot
+-***(software engineer)spring
+-***(software engineer)jane street
+-***(software engineer)Seatgeek
+***(Full-Stack Software Engineer)artsy
+***(software engineer)Mediamath
+***(Front End Software Engineer)commonbond
+***(Full-Stack Software Engineer)Bonobos
+***(Software Engineer Restaurants)Square
+-***(Software Engineer)Managed By Q
+***(Software Engineer-campus hire)Two Sigma
+***(Mobile Software Engineer)Appboy
+***(Associate Software Engineer)xo group
+Gilt
+magnetic
+poppin
+Sony
+grovo
+casper
+LiveLikeVR - enables broadcasters and sports teams to deliver live sports viewing experiences.
+InsiteVR - allows users to prototype and present designs in a 3D model. 
+justworks - seamless payroll, great and affordable benefits, and comprehensive compliance coverage, all in one cutting-edge product
+Joor -  The JOOR platform and its intuitive technology is pioneering a wholesale revolution. We've put the entire wholesale buying and selling process online enabling brands and retailers to drive incremental revenue, cut costs, eliminate manual paper/order entry, improve their customer experience and analyze performance through data analytics.
+Digital Ocean - cloud computing
+Noom - lifeCoaching app
+square
+greenhouse software
+persado
+floored
 shutterstock
-intersection
 zipdrug
 namely
 x.ai
 frame.io
 Dropbox
-***(Android Software Engineer) soundcloud
-***(Front-end Software Engineer) Handshake
-***(Interaction Prototyper)***(Software Engineer-all levels) Magic Leap
+sprinklr
+Adobe
+appnexus
+outbrain
+canary
+transferwise
+plated
+lemonade
+lightricks
+olo
+ca technologies
+spotify
+collective
+Fareportal - Travel tech
+Slack
+tripleLift - mobile/web ads
+cyrus innovation
+Conductor
+Sailthru
+Venmo
 
