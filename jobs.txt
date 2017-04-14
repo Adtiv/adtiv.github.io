@@ -10,7 +10,7 @@
 ***(Front End Software Engineer) Knewton - create free adaptive learning lessons that help students meet learning goals.
 ***(Front End Software Engineer) Kickstarter
 ***(Mid level Software Engineer) GrubHub
-***(Software Engineering Intern) Tumblr
+-***(Software Engineering Intern) Tumblr
 -***(Front End Software Engineer)Peloton Interactive - smart exercise bike
 ***(Associate Software Engineer)Kargo -  leader in mobile brand advertising.
 ***(Front End Software Engineer)ClassPass - fitness startup
@@ -36,41 +36,99 @@
 -***(software engineer)spring
 -***(software engineer)jane street
 -***(software engineer)Seatgeek
-***(Full-Stack Software Engineer)artsy
-***(software engineer)Mediamath
-***(Front End Software Engineer)commonbond
+-***(Full-Stack Software Engineer)artsy
+-***(software engineer)Mediamath
+-***(Front End Software Engineer)commonbond
 ***(Full-Stack Software Engineer)Bonobos
 ***(Software Engineer Restaurants)Square
 -***(Software Engineer)Managed By Q
 ***(Software Engineer-campus hire)Two Sigma
-***(Mobile Software Engineer)Appboy
+-***(Mobile Software Engineer)Appboy
 ***(Associate Software Engineer)xo group
+***(Junior Full Stack Developer)Alice
+-***(Software Engineer)persado
+-***(Front-End Developer)JetSmarter
+***(Full Stack Developer)Abacus
+***(Full Stack Engineer)VICE
+***(New Grad Software Engineer)Facebook
+***(Junior Front End Engineer)Trifacta
+***(Junior Software Engineer)Amazon
+-***(Software Engineer)Twitch
+***(New Grad Software Engineer)Yelp
+***(Software Engineer- Web UI)Grammarly
+-***(New Grad Software Engineer)thorn
+***(New Grad Software Engineer)Quantcast
+***(New Grad Software Engineer)Twilio
+***(New Grad Software Engineer)Affirm
+***(New Grad Software Engineer)Blend
+***(New Grad Software Engineer)Zynga
+-***(New Grad Software Engineer)Quora
+-***(New Grad Software Engineer)Xero
+***(New Grad Software Engineer)Dropbox
+***(New Grad Software Engineer)Medallia
+***(New Grad Software Engineer)Paypal
+***(New Grad Software Engineer)TicketMaster
+-***(New Grad Software Engineer)MindMeld
+***(Unreal/Unity Engineer)Leap Motion
+***(New Grad Software Engineer)Drive.ai
+-***(Software Engineer)Pantheon
+***(Software Engineer)Apple
+***(New Grad Software Engineer Rotational)Workday
+***(New Grad Software Engineer)NetApp
+-***(New Grad Software Engineer)LiveRamp
+***(New Grad Software Engineer)Token
+***(New Grad Software Engineer)Evernote
+-***(New Grad Software Engineer)Plaid Technologies
+***(New Grad Software Engineer)Rubrik
+-***(New Grad Mobile Engineer)Wish
+***(New Grad software internship media entertainment)Autodesk
+***(New Grad Software Engineer)Palantir
+***(New Grad Software Engineer)Unity
+***(New Grad Software Engineer Infrastructure)Unity
+***(New Grad Software Engineer)WhatsApp
+***(New Grad Software Engineer)Hopper
+***(New Grad Software Engineer)IXL Learning
+-***(Junior Software Engineer Web)Spring
+***(Growth Engineering Summer Intern)Udemy
+***(Fullstack Software Engineer Intern - Data)Udacity
+***(New Grad Software Engineer)Sift
+***(New Grad Software Engineer)The Trade Desk
+***(New Grad Software Engineer)Shippo
+99
+
+vivino
+ibotta
+readytalk
+onDeck
+via
 Gilt
 magnetic
 poppin
 Sony
 grovo
 casper
+percolate
 LiveLikeVR - enables broadcasters and sports teams to deliver live sports viewing experiences.
 InsiteVR - allows users to prototype and present designs in a 3D model. 
 justworks - seamless payroll, great and affordable benefits, and comprehensive compliance coverage, all in one cutting-edge product
 Joor -  The JOOR platform and its intuitive technology is pioneering a wholesale revolution. We've put the entire wholesale buying and selling process online enabling brands and retailers to drive incremental revenue, cut costs, eliminate manual paper/order entry, improve their customer experience and analyze performance through data analytics.
 Digital Ocean - cloud computing
 Noom - lifeCoaching app
-square
 greenhouse software
-persado
 floored
+handy
 shutterstock
 zipdrug
 namely
 x.ai
 frame.io
 Dropbox
+invision
 sprinklr
 Adobe
 appnexus
 outbrain
+hyperscience
 canary
 transferwise
 plated

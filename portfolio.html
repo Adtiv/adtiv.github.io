@@ -22,374 +22,6 @@
 		  ga('send', 'pageview');
 
 		</script>
-		<!--
-		<script type="text/processing" data-processing-target="processing-canvas">
-			color[][] storedColors1 = new color[35][35];
-			color[][] storedColors2 = new color[35][35];
-			color[][] storedColors3 = new color[35][35];
-			color[][] storedColors4 = new color[35][35];
-			color[][] storedColors5 = new color[35][35];
-			color[][] storedColors6 = new color[35][35];
-			color[][] storedColors7 = new color[35][35];
-			color[][] storedColors8 = new color[35][35];
-			color[][] storedColors9 = new color[35][35];
-			color[][] storedColors10 = new color[35][35];
-			color[][] storedColors11 = new color[35][35];
-			color[][] storedColors12 = new color[35][35];
-			color[][] storedColors13 = new color[35][35];
-			color[][] storedColors14 = new color[35][35];
-		 	void setup(){
-			  //setup by interpolating betweeen yellow and black to create the background
-			  //interpolate between blue and black to get the lines for the grid
-			  size(600,252);
-			  background(255);
-			  color b = color(0,0,0);
-			  float step= 255.0/350.0;
-			  print("step" + step + "       ");
-			  float interpolate = 0;
-			  frameRate(12);
-			  for(int j=0;j<700;j++){
-			    for(int i=0;i<600;i++){
-			      //set background color
-			      b = color(interpolate,interpolate,0);
-			      set(i,j,b);
-			      //Store color for first box of each row used later for the animation
-			      if(i>=5 && i<40 && j>=5 && j<40){
-			        storedColors1[i-5][j-5] = b;
-			      }
-			      if(i>=5 && i<40 && j>=55 && j<90){
-			        storedColors2[i-5][j-55] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=105 && j<140){
-			        storedColors3[i-5][j-105] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=155 && j<190){
-			        storedColors4[i-5][j-155] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=205 && j<240){
-			        storedColors5[i-5][j-205] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=255 && j<290){
-			        storedColors6[i-5][j-255] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=305 && j<340){
-			        storedColors7[i-5][j-305] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=355 && j<390){
-			        storedColors8[i-5][j-355] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=405 && j<440){
-			        storedColors9[i-5][j-405] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=455 && j<490){
-			        storedColors10[i-5][j-455] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=505 && j<540){
-			        storedColors11[i-5][j-505] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=555 && j<590){
-			        storedColors12[i-5][j-555] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=605 && j<640){
-			        storedColors13[i-5][j-605] = b;      
-			      }
-			      if(i>=5 && i<40 && j>=655 && j<690){
-			        storedColors14[i-5][j-655] = b;      
-			      }
-			      //color grid lines
-			      if(i%50==0 || j%50==0){
-			        b=color(0,interpolate,interpolate);
-			        set(i,j,b);
-			      }
-			    }
-			    //add or subtract the interpolated step 
-			    if(j<350){
-			      interpolate+=step;      
-			    }
-			    else{
-			      interpolate-=step;
-			    }
-			  }
-			}
-			void draw(){
-			  textSize(30);
-			  fill(0, 200, 0);
-			  //refill color
-			  placeColors1(5,5); 
-			  placeColors2(5,55); 
-			  placeColors3(5,105);
-			  placeColors4(5,155);
-			  placeColors5(5,205);
-			  placeColors6(5,255);
-			  placeColors7(5,305);
-			  placeColors8(5,355);
-			  placeColors9(5,405);
-			  placeColors10(5,455);
-			  placeColors11(5,505);
-			  placeColors12(5,555);
-			  placeColors13(5,605);
-			  placeColors14(5,655);
-			  //Use random to place a 1 or 0 in each square
-			  PFont font;
-			  // The font must be located in the sketch's 
-			  // "data" directory to load successfully
-			  font = loadFont("MicrosoftYaHei-Bold-48.vlw");
-			  textFont(font, 25);
-			  for(int j = 36;j<252;j+=50){
-			    for(int i = 18;i<600;i+=50){
-			      float x = random(1);
-			      if(x>.5){
-			         text("0",i,j);
-			      }
-			      else{
-			        text("1",i,j);
-			      }
-			    }
-			  }
-			  fill(0,0,0);
-			  //Poster Text
- 
-			}
-			//each function replaces the color for that row number. 
-			void placeColors1(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<40; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors1[h-(5+offset)][k-5]);
-			      if(k==39 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = j;
-			      }
-			    }
-			  }
-			}
-			void placeColors2(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<90; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors2[h-(5+offset)][k-55]);
-			      if(k==89 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 55;
-			      }
-			    }
-			  }
-			}
-			void placeColors3(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<140; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors3[h-(5+offset)][k-105]);
-			      if(k==139 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 105;
-			      }
-			    }
-			  }
-			}
-			void placeColors4(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<190; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors4[h-(5+offset)][k-155]);
-			      if(k==189 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 155;
-			      }
-			    }
-			  }
-			}
-			void placeColors5(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<240; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors5[h-(5+offset)][k-205]);
-			      if(k==239 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 205;
-			      }
-			    }
-			  }
-			}
-			void placeColors6(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<290; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors6[h-(5+offset)][k-255]);
-			      if(k==289 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 255;
-			      }
-			    }
-			  }
-			}
-			void placeColors7(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<340; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors7[h-(5+offset)][k-305]);
-			      if(k==339 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 305;
-			      }
-			    }
-			  }
-			}
-			void placeColors8(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<390; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors8[h-(5+offset)][k-355]);
-			      if(k==389 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 355;
-			      }
-			    }
-			  }
-			}
-			void placeColors9(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<440; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors9[h-(5+offset)][k-405]);
-			      if(k==439 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 405;
-			      }
-			    }
-			  }
-			}
-			void placeColors10(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<490; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors10[h-(5+offset)][k-455]);
-			      if(k==489 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 455;
-			      }
-			    }
-			  }
-			}
-			void placeColors11(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<540; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors11[h-(5+offset)][k-505]);
-			      if(k==539 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 505;
-			      }
-			    }
-			  }
-			}
-			void placeColors12(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<590; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors12[h-(5+offset)][k-555]);
-			      if(k==589 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 555;
-			      }
-			    }
-			  }
-			}
-			void placeColors13(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<640; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors13[h-(5+offset)][k-605]);
-			      if(k==639 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 605;
-			      }
-			    }
-			  }
-			}
-			void placeColors14(int i, int j){
-			  int n = 40;
-			  int offset = 0;
-			  for(int k = j; k<690; k++){
-			    for(int h = i; h<n; h++){
-			      set(h,k,storedColors14[h-(5+offset)][k-655]);
-			      if(k==689 && h==n-1 && h+50<width){
-			        j=5;
-			        i+=50;
-			        n+=50;
-			        offset+=50;
-			        h=i;
-			        k = 655;
-			      }
-			    }
-			  }
-			}
-		</script>-->
 		<link rel="icon" type="image/png"
      	href="images/MeIcon.png" />
 	</head>
@@ -410,13 +42,24 @@
 				</script><canvas width="100" height="100"></canvas></p>
 			</div>-->
 			<div class="folioPiece" style="padding-top:1px;">
-				<h1 class="folioHeader"style="text-align:center;">Software</h1>
+				<h1 class="folioHeader" style="text-align:center;">Software</h1>
 				<hr class="headerBreak">
 				<p class="subFolioCategory">Web / Mobile Apps</p>
-				<hr class="subHeaderBreak"style="width:50%;">
-				<a href="images/fitiHome.PNG"><img class="caPic"src="images/fitiHome.PNG"  style="margin-left:2%;width:22%;height:45%;"></a>
-				<a href="images/fitiCamera.png"><img class="caPic"src="images/fitiCamera.png" style="width:21%;height:45%;margin-left:13%;"></a>
-				<a href="images/fitiDrawing.png"><img class="caPic"src="images/fitiDrawing.png"  style="width:22%;height:45%;margin-left:13%;"></a>
+				<hr class="subHeaderBreak" style="width:50%;">
+				<a href="images/Foogle1.PNG"><img class="caPic" src="images/Foogle1.PNG" i style="width:43%;height:40%;margin-left:2%;"></a>
+				<a href="images/Foogle2.PNG"><img class="caPic" src="images/Foogle2.PNG" style="width:43%;height:40%;margin-left:8%;"></a><br><br>
+				<a href="images/Foogle3.PNG"><img class="caPic" src="images/Foogle3.PNG" style="width:43%;height:40%;margin-left:2%;"></a>
+				<a href="images/Foogle4.PNG"><img class="caPic" src="images/Foogle4.PNG" style="width:43%;height:40%;margin-left:8%;"></a>
+				<div style="padding-left:5%;padding-right:5%;">
+					<br><br>
+					"Foogle", is a football search engine which contains statistics from 1974-2016. Dropdown filters allow the user to customize queries for specific teams/years, aswell as categories such as: rushing, receiving, passing, and defense. The application was created for situations such as a fantasy football draft, where quick stat lookups are necessary. <span class="codeUsed"><i><b>HTML, CSS, Javascript, PHP, SQL(Oracle), Python(Data Cleaning)</b></i>.</span>
+					<br><a class="codeLink" href="http://www.cise.ufl.edu/~ztaylor/index.html">Foogle Search</a>
+				</div>
+			</div>
+			<div class="folioPiece">
+				<a href="images/fitiHome.PNG"><img class="caPic" src="images/fitiHome.PNG"  style="margin-left:2%;width:22%;height:45%;"></a>
+				<a href="images/fitiCamera.png"><img class="caPic" src="images/fitiCamera.png" style="width:21%;height:45%;margin-left:13%;"></a>
+				<a href="images/fitiDrawing.png"><img class="caPic" src="images/fitiDrawing.png"  style="width:22%;height:45%;margin-left:13%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
 					"Fiti", mobile app allowing the user to upload a drawing or message in a unique location. Uses geoqueries and location based algorithms, to display the messages in your location. Messages are shown through a "Pokemon Go"-style interface.  <span class="codeUsed"><i><b>Ionic2, Angular2, Typescript, Firebase</b></i>.</span>
@@ -439,10 +82,10 @@
 			</div>
 			<div class="folioPiece">
 
-				<a href="images/cbc1.PNG"><img src="images/cbc1.PNG" class="caPic" style="margin-left:2%;width:22%;height:45%;"></a><a href="images/cbc2.PNG"><img class="caPic"src="images/cbc2.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
-				<a href="images/cbc3.PNG"><img class="caPic"src="images/cbc3.PNG" style="width:22%;height:45%;margin-left:12%;"></a><br><br>
-				<a href="images/cbc4.PNG"><img src="images/cbc4.PNG" class="caPic" style="margin-left:2%;width:22%;height:45%;"></a><a href="cbc5.PNG"><img class="caPic"src="images/cbc5.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
-				<a href="images/cbc6.PNG"><img class="caPic"src="images/cbc6.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
+				<a href="images/cbc1.PNG"><img src="images/cbc1.PNG" class="caPic" style="margin-left:2%;width:22%;height:45%;"></a><a href="images/cbc2.PNG"><img class="caPic" src="images/cbc2.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
+				<a href="images/cbc3.PNG"><img class="caPic" src="images/cbc3.PNG" style="width:22%;height:45%;margin-left:12%;"></a><br><br>
+				<a href="images/cbc4.PNG"><img src="images/cbc4.PNG" class="caPic" style="margin-left:2%;width:22%;height:45%;"></a><a href="cbc5.PNG"><img class="caPic" src="images/cbc5.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
+				<a href="images/cbc6.PNG"><img class="caPic" src="images/cbc6.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
 					"Campus Buyers Club"-Application for college students to buy and sell items. <span class="codeUsed"><i><b>HTML, CSS, Javascript, Phonegap, Jquery Mobile, Firebase(DB)</b></i>.</span>
@@ -450,9 +93,10 @@
 				</div>
 			</div>
 			<div class="folioPiece">
-				<a href="images/hbra2.PNG"><img src="images/hbra2.PNG" class="caPic" style="width:22%;height:45%;"></a><a href="images/hbra1.PNG"><img class="caPic"src="images/hbra1.PNG" style="width:22%;height:45%;margin-left:15%;"></a>
-				<div id="description">
-					<br><br>
+				<a href="images/hbra2.PNG"><img src="images/hbra2.PNG" class="caPic" style="margin-left:2%;width:22%;height:45%;"></a><a href="images/hbra3.PNG"><img class="caPic" src="images/hbra3.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
+				<a href="images/hbra1.PNG"><img class="caPic" src="images/hbra1.PNG" style="width:22%;height:45%;margin-left:12%;"></a>
+				<br><br>
+				<div style="padding-left:5%;padding-right:5%;">
 					- Mobile Phonegap Application for Construction Site Safety Inspectors. <span class="codeUsed"><i><b>HTML, CSS, Javascript, Phonegap</b></i>.</span>
 					<br><a class="codeLink" href="https://github.com/Adtiv/tourbillon-hbra">See the code</a>
 				</div>
@@ -476,7 +120,7 @@
 				<a href="images/battlefield1.png"><img src="images/battlefield1.png" class="caPic" style="width:30%;height:30%;"></a><a href="images/battlefield2.png"><img class="caPic"src="images/battlefield2.png" style="width:29%;height:30%;"></a><a href="images/battlefield3.png"><img class="caPic"src="images/battlefield3.png" style="width:30%;height:30%;"></a>
 				<div style="padding-left:5%;padding-right:5%;">
 					<br><br>
-					- "Revolutions"-3D action adventure/tower defense game. Modeled the above three levels: Spaceship, Earth Faction Homebase, and Battlefield. All textures, skyboxes, and models are custom(besides trees). Also responsible for programming game AI and first person, and quest interactions for Earth level. Implemented enemy/first person animations. Created all 2D art and theme song. Currently still in development. <span class="codeUsed"><i><b>Maya, Blender, Ableton, Gimp, Unity3D, C#</b></i>.</span>
+					- "Revolutions"-3D action adventure/tower defense game. Modeled the above three levels: Spaceship, Earth Faction Homebase, and Battlefield. All textures, skyboxes, and models are custom(besides trees). Also responsible for programming game AI and first person, and quest interactions for Earth level. Implemented enemy/first person animations. Created all 2D art and theme song.<span class="codeUsed"><i><b>Maya, Blender, Ableton, Gimp, Unity3D, C#</b></i>.</span>
 					<br><a class="codeLink" href="https://github.com/jasontowens/rEVOLUTIONs">See the code</a>
 				</div>				
 			</div>
