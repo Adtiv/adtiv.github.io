@@ -30,7 +30,7 @@
 -***(Full-Stack Software Engineer)betterment
 ***(Software Engineer Player)JW Player
 ***(Front End Software Engineer creator platform)vimeo
-***(software engineer)intersection
+-***(software engineer)intersection
 ***(software engineer)codecademy
 -***(junior front end engineer)Dexter Bot
 -***(software engineer)spring
