@@ -12,7 +12,11 @@
 
 	  ga('create', 'UA-90130633-1', 'auto');
 	  ga('send', 'pageview');
-
+	  
+	  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+	  if(isIE){
+	  	alert("This site is not optimized for IE, please use a different browser");
+	  }
 	</script>
 </head>
 	<div id="firstHeader">
