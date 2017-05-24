@@ -97,6 +97,7 @@ body{
 }
 #aboutMeBackground{
 	bottom: 0;
+	background-size: 100% 100%;
 	overflow: auto;
 	background-image:url("images/7.jpg");
 }
@@ -195,6 +196,8 @@ body{
 	margin-right: 2%;
 
 }
+.fotorama{
+}
 #description{
 	width: 30%;
 	position:relative;
@@ -204,7 +207,19 @@ body{
 	margin-left: 3%;
 	border:2px solid black;
 }
-
+.mobileBottomMargin{
+	width:100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0);
+    margin: 1em 0;
+    padding: 0; 
+}
+.mobilePicDiv{
+	width:50%;
+	float:left;
+}
 #description2{
 	padding-left:5%;
 	width: 45%;
